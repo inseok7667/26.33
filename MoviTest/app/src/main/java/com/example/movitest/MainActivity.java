@@ -76,6 +76,8 @@ public class MainActivity extends Activity {
 
                                 Movie moviedata = new Movie();
 
+
+                                moviedata.setId(obj.getString("id"));
                                 moviedata.setTitle(obj.getString("title"));
                                 moviedata.setPoset_path(obj.getString("poster_path"));
                                 moviedata.setOverview(obj.getString("overview"));
@@ -83,7 +85,7 @@ public class MainActivity extends Activity {
 
 
 
-
+                                Log.d("tjr",moviedata.getId());
                                 Log.d("rere",moviedata.getPoset_path());
                                 Log.d("rere",moviedata.getTitle());
                                 Log.d("rere",moviedata.getOverview());
@@ -101,12 +103,14 @@ public class MainActivity extends Activity {
                                         ((MyAdapter)mAdapter).getMovie_detail(position);
                                         Intent intent = new Intent(MainActivity.this,DetailMovie.class);
 
+
+                                        intent.putExtra("id",movie.get(position).getId());
                                         intent.putExtra("title",movie.get(position).getTitle());
                                         intent.putExtra("poster_path",movie.get(position).getPoset_path());
                                         intent.putExtra("overview",movie.get(position).getOverview());
 
                                         startActivity(intent);
-                                        Log.d("sese", String.valueOf(position));
+                                        Log.d("sese", movie.get(position).getId());
 
                                     }
                                 }
@@ -132,4 +136,5 @@ public class MainActivity extends Activity {
         queue.add(stringRequest);
 
     }
+
 }

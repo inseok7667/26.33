@@ -3,9 +3,18 @@ package com.example.movitest;
 import java.io.Serializable;
 
 public class Movie implements Serializable {
+    private String id;
     private String title;
     private String poset_path;
     private String overview;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getOverview() {
         return overview;
