@@ -11,13 +11,13 @@
         >
 
         <EditText
-            android:id="@+id/search_movie"
+            android:id="@+id/search_movie2"
             android:layout_width="325dp"
             android:layout_height="wrap_content"
             android:hint="영화제목 검색" />
 
         <Button
-            android:id="@+id/search_btn"
+            android:id="@+id/search_btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -33,7 +33,7 @@
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/my_recyclerView"
+        android:id="@+id/my_recyclerView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"

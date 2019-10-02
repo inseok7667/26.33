@@ -101,7 +101,7 @@ public class DetailMovie extends YouTubeBaseActivity {
 
 
                             }
-                            Log.d("seok22",""+youtube_key.get(0).getY_id());
+                            //Log.d("seok22",""+youtube_key.get(0).getY_id());
 
                         } catch (JSONException e) {
                             e.printStackTrace();
